@@ -1,0 +1,23 @@
+package com.example.simpsonproject.remote.data
+
+data class characterListResponse(
+    val count: Int,
+    val next: String,
+    val prev:String,
+    val pages:Int,
+    val results: List<elementCharacterList>
+
+)
+
+
+data class elementCharacterList(
+    val id:Int,
+    val age:Int,
+    val birthdate:String,
+    val gender: String,
+    val name:String,
+    val occupation:String,
+    val portrait_path: String,
+    val phrases: List<String>,
+    val status:String
+)
