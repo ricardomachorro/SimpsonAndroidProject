@@ -42,7 +42,9 @@ android {
 dependencies {
 
     var retrofitVer = "2.9.0"
+    var composeVer = "2.10.0"
 
+    implementation(libs.androidx.compose.foundation)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -61,4 +63,5 @@ dependencies {
 
     implementation("com.squareup.retrofit2:retrofit:${retrofitVer}")
     implementation("com.squareup.retrofit2:converter-gson:${retrofitVer}")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:${composeVer}")
 }
