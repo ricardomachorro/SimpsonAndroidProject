@@ -41,8 +41,16 @@ android {
 
 dependencies {
 
+
+    implementation(libs.androidx.compose.runtime.livedata)
     var retrofitVer = "2.9.0"
+    var kotlinCourotinees = "1.7.3"
     var composeVer = "2.10.0"
+    var composeNavigationVer = "2.9.7"
+    var composeLiveDataVer = "1.10.3"
+    var lifecycleRuntimeVer ="2.10.0"
+
+    var coilVer ="2.7.0";
 
     implementation(libs.androidx.compose.foundation)
     implementation(libs.androidx.core.ktx)
@@ -63,5 +71,17 @@ dependencies {
 
     implementation("com.squareup.retrofit2:retrofit:${retrofitVer}")
     implementation("com.squareup.retrofit2:converter-gson:${retrofitVer}")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:${kotlinCourotinees}")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:${composeVer}")
+
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.10.0")
+
+    /*implementation("androidx.compose.runtime:runtime-livedata:${composeLiveDataVer}")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:${lifecycleRuntimeVer}")*/
+
+
+    implementation("androidx.navigation:navigation-common:${composeNavigationVer}")
+    implementation("io.coil-kt:coil-compose:${coilVer}")
+
+
 }
